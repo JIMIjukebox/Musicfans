@@ -1,0 +1,15 @@
+document.getElementById("data-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const formData = {
+        fullname: document.getElementById("fullname").value,
+        age: document.getElementById("age").value,
+        gender: document.getElementById("gender").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        carrier: document.getElementById("carrier").value,
+        location: document.getElementById("location").value,
+        genre: document.getElementById("genre").value
+    };
+    console.log(formData);
+    alert('Data submitted successfully!');
+});
